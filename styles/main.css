@@ -265,6 +265,7 @@ hr {
 .project-texts {
   font-size: 10px;
   text-align: justify;
+  color: balck;
 }
 
 .see-more {
@@ -747,4 +748,5 @@ hr {
   .welcoming-text{
     margin-top: 180px;
   }
+
 }
