@@ -1,0 +1,4 @@
+I'll have to change the potfolio name to respond to clicks, just for animation effect
+i will later use javascript to make the header a rounded corner and also fixed
+i will later change the landing page background to an image
+for now i don't have any color in mind foe the text content and no font style also. so i am to com back to that.

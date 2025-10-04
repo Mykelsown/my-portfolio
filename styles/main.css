@@ -1,0 +1,750 @@
+/* first section of the website */
+.onboarding-page {
+  background: linear-gradient(
+    to top,
+    #046a90 0%,
+    1.8707482144236565%,
+    #0063a1 3.741496428847313%,
+    5.733409158629666%,
+    #057cd6 7.725321888412018%,
+    14.406878322107087%,
+    #0e70c6 21.088434755802155%,
+    26.70068070292473%,
+    #0049b8 32.3129266500473%,
+    36.564627289772034%,
+    #1e4af5 40.816327929496765%,
+    46.768708527088165%,
+    #003ae4 52.721089124679565%,
+    57.482993602752686%,
+    #1121d8 62.244898080825806%,
+    66.15646183490753%,
+    #04149f 70.06802558898926%,
+    76.36054456233978%,
+    #010475 82.65306353569031%,
+    91.32653176784515%,
+    #13131f 100%
+  );
+  height: 97vh;
+  position: relative;
+  /* padding:0px; */
+  /* margin-top: -150px; */
+}
+
+.about-me-content {
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+}
+
+.highlighting-welcoming {
+  display: block;
+  font-size: 1.2rem;
+  text-align: left;
+  word-spacing: 5px;
+}
+
+.welcoming-text {
+  color: wheat;
+  margin: 10px;
+  font-size: 1rem;
+  margin-bottom: 55px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 100px;
+}
+
+.about-me-text {
+  font-size: 0.67rem;
+  line-height: 155%;
+  text-align: left;
+  margin-left: 30%;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  text-indent: 7%;
+  text-align: justify;
+  position: relative;
+}
+
+.name {
+  color: #f8e9a1;
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 2%;
+  font-weight: 400;
+  margin-left: 30%;
+}
+
+.hire {
+  background-color: #03d3b7;
+  border: none;
+  border-radius: 1.1rem;
+  color: rgba(2, 87, 166, 0.993);
+  /* margin-left: 76%; */
+  /* margin-bottom: 10px; */
+  transition: 0.1s;
+  position: absolute;
+  right: 11px;
+  bottom: 0px;
+  padding: 1% 1.7%;
+  cursor: pointer;
+}
+
+.hire:hover,
+.hire-extend:hover {
+  background-color: #01a892;
+  color: wheat;
+  box-shadow: 0.5px 1px 8px rgba(2, 87, 166, 0.993);
+  transform: translateY(1px);
+}
+
+.hire:active,
+.hire-extend:active {
+  transform: scale(1.03);
+}
+
+/* start of the second section of the website */
+.structure {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 30px 0px 30px;
+}
+
+.what {
+  background-color: #016fb3;
+}
+
+.heading,
+.container {
+  margin-bottom: 30px;
+}
+
+.expertise {
+  margin: 4%;
+}
+
+.heading {
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 2;
+}
+
+.expertise-heading {
+  font-size: 0.7rem;
+  margin-bottom: 30px;
+}
+
+/*both the expertise-text and the why-content have things in common that was why i added them together*/
+.expertise-texts {
+  line-height: 120%;
+}
+
+.expertise:hover {
+  transform: scale(1.1);
+}
+
+hr {
+  max-height: 1px;
+  background-color: rgb(137, 137, 137);
+  width: 90%;
+  border-style: solid;
+}
+
+/* third section of the website */
+.why {
+  background-color: #0063a1;
+}
+
+.why-content {
+  width: 80%;
+  padding: 10%;
+  background-color: rgba(165, 165, 165, 0.829);
+  border-radius: 35px;
+  transition: 0.3s;
+}
+
+.why-content:hover{
+  background-color: rgba(145, 145, 145, 0.829);
+}
+
+.why-content > p {
+  height: 4vh;
+  align-content: center;
+  line-height: 140%;
+}
+
+/* beginning of the third section */
+.projects {
+  background-color: #046a90;
+  height: 40vh;
+  padding: 0px 10px 30px 10px;
+  position: relative;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 3%;
+}
+
+.project-heading {
+  margin-bottom: 30px;
+}
+
+.each {
+  /* position: relative; */
+  line-height: 20px;
+  height: 20vh;
+  width: 30%;
+  background-color: rgb(220, 219, 219);
+  align-content: start;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0.5px 6px rgba(0, 0, 0, 0.7);
+  transition: 0.2s ease-in-out;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  /* margin-left: 10px; */
+  border-radius: 20px;
+  border-bottom-left-radius: 70%;
+}
+
+.each > p {
+  color: black;
+}
+
+.one,
+.two,
+.three {
+  position: absolute;
+  bottom: 30px;
+  width: 35%;
+}
+
+.one {
+  left: 10px;
+}
+
+.two {
+  z-index: 1;
+  width: 50%;
+  transform: scale(1.05);
+}
+
+.three {
+  right: 10px;
+}
+
+.switch {
+  width: 50%;
+  z-index: 2;
+  transform: scale(1.05);
+}
+
+.project-title {
+  font-size: 0.7rem;
+  margin-bottom: 5px;
+}
+
+.project-texts {
+  font-size: 10px;
+  text-align: justify;
+}
+
+.see-more {
+  margin-bottom: -15px;
+  color: rgb(48, 48, 48);
+  text-decoration: none;
+}
+
+.see-more{
+  color: rgb(63, 63, 63);
+}
+
+/* beginnig of the fourth section */
+.contact {
+  background-color: #026083;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container > p {
+  margin: 8px 0px;
+}
+
+.contact-heading {
+  padding-bottom: 0px;
+}
+
+.contact-text {
+  font-weight: 600;
+  font-size: 0.6rem;
+  padding-bottom: 15px;
+}
+
+.footer-lower {
+  text-align: center;
+}
+
+/* responsiveness of screen-height lower than 481px */
+@media (max-height: 480px) {
+  .welcoming-text {
+    margin-top: 60px;
+  }
+  .about-me-content {
+    margin-bottom: -10px;
+  }
+  .name {
+    font-size: 0.7rem;
+  }
+  .about-me-text {
+    font-size: 0.57rem;
+  }
+  .heading,
+  .container {
+    margin-bottom: 20px;
+  }
+}
+
+/* responsiveness for screen-width higher than 500px */
+@media (min-width: 500px) {
+  .portfolio-name {
+    font-size: 2rem;
+  }
+  .welcoming-text,
+  .highlighting-welcoming {
+    text-align: center;
+  }
+  .highlighting-welcoming {
+    margin-left: -200px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .welcoming-text {
+    font-size: 1.3rem;
+  }
+  .name {
+    font-size: 1.1rem;
+  }
+  .expertise-heading {
+    font-size: 0.9rem;
+  }
+  p,
+  .about-me-text,
+  .contact-text {
+    font-size: 0.77rem;
+  }
+  .heading {
+    font-size: 1.2rem;
+  }
+  header {
+    padding: 0.9rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .each {
+    width: 35%;
+  }
+  .one {
+    left: 20%;
+  }
+  .three {
+    right: 20%;
+  }
+}
+
+@media (min-width: 750px) {
+  .highlighting-welcoming {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+  }
+  .welcoming-text {
+    font-size: 1.5rem;
+    margin-top: 100px;
+  }
+  .about-me-content {
+    bottom: 60px;
+  }
+  header {
+    padding: 1.5rem;
+    align-content: center;
+  }
+  .header-content {
+    align-items: center;
+  }
+  .nav-list-larger {
+    display: flex;
+    
+  }
+  .onboarding-page {
+    height: 100vh;
+  }  
+}
+
+@media (min-width: 830px) {
+  .about-me-content {
+    width: 70%;
+    margin-right: 10%;
+  }
+  .each {
+    height: 22vh;
+  }
+}
+
+@media screen {
+  .projects {
+    height: 420px;
+  }
+  .each {
+    height: 250px;
+  }
+}
+
+@media (min-width: 900px) {
+  .projects {
+    height: 460px;
+  }
+  .each {
+    width: 25%;
+  }
+}
+@media (max-width: 1000px) {
+  .nav-list-larger {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  
+  header {
+    padding: 1.4rem;
+  }
+  .portfolio-name {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .nav-list-larger{
+    display: flex;
+    gap: 20px;
+  }
+  .nav-list-larger a {
+  font-size: 1rem;    
+  padding: 8px 16px;    
+  text-decoration: none;
+  color: inherit;        
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.nav-list-larger a:hover {
+  color: #046a90;   
+}
+  .highlighting-welcoming {
+    font-size: 2rem;
+  }
+  .welcoming-text {
+    font-size: 1.8rem;
+    margin-top: 130px;
+  }
+  .name {
+    font-size: 1.2rem;
+  }
+  .expertise-heading {
+    font-size: 1.1rem;
+  }
+  p,
+  .about-me-text,
+  .contact-text {
+    font-size: 0.87rem;
+  }
+  .heading {
+    font-size: 1.3rem;
+  }
+  .footer-nav {
+    font-size: 1.4rem;
+  }
+  .footer-mid {
+    width: 20%;
+  }
+  .why-content {
+    border-radius: 60px;
+  }
+  .menu-icon {
+    display: none;
+  }
+}
+
+@media (min-width: 1220px) {
+  .each {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .each {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1400px) {
+  header {
+    padding: 1.7rem;
+  }
+  .portfolio-name {
+    font-size: 2.4rem;
+  }
+  .highlighting-welcoming {
+    font-size: 2.4rem;
+  }
+  .welcoming-text {
+    font-size: 2.1rem;
+  }
+  .name {
+    font-size: 1.3rem;
+  }
+  .expertise-heading {
+    font-size: 1.3rem;
+  }
+  p,
+  .about-me-text,
+  .contact-text {
+    font-size: 0.97rem;
+  }
+  .heading {
+    font-size: 1.7rem;
+  }
+  .project-title {
+    font-size: 1rem;
+  }
+  .project-texts {
+    font-size: 20px;
+  }
+  .one {
+    left: 25%;
+  }
+  .three {
+    right: 25%;
+  }
+  .footer-nav {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1500px) {
+  .each {
+    width: 18%;
+    height: 280px;
+  }
+  .welcoming-text{
+    margin-top: 140px;
+  }
+}
+
+@media (min-width: 1720px) {
+  .projects {
+    height: 490px;
+  }
+  .each {
+    width: 18%;
+    height: 300px;
+  }
+  .one {
+    left: 30%;
+  }
+  .three {
+    right: 30%;
+  }
+}
+
+@media (min-width: 1800px) {
+  header {
+    padding: 2rem;
+  }
+  .portfolio-name {
+    font-size: 2.7rem;
+  }
+  .highlighting-welcoming {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+  }
+  .welcoming-text {
+    font-size: 2.3rem;
+    margin-top: 160px;
+  }
+  .expertise-heading {
+    font-size: 1.5rem;
+  }
+  .name {
+    font-size: 1.4rem;
+  }
+  p,
+  .about-me-text,
+  .contact-text {
+    font-size: 1.07rem;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .hire {
+    border-radius: 1.2rem;
+  }
+  .project-title {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+  .nav-list-larger a{
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .each {
+    width: 18%;
+  }
+}
+
+@media (min-width: 2200px) {
+  .highlighting-welcoming {
+    font-size: 2.9rem;
+    margin-bottom: 20px;
+  }
+  .welcoming-text {
+    font-size: 2.5rem;
+    margin-top: 190px;
+  }
+  p,
+  .about-me-text,
+  .contact-text {
+    font-size: 1.27rem;
+  }
+  .hire {
+    border-radius: 1.4rem;
+    font-size: 1rem;
+    padding: 0.8% 1.5%;
+  }
+  .projects {
+    height: 560px;
+  }
+  .each {
+    width: 20%;
+    height: 350px;
+  }
+  .footer-nav {
+    font-size: 2rem;
+  }
+  .see-more{
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 2400px) {
+  .highlighting-welcoming {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .welcoming-text {
+    font-size: 2.6rem;
+    margin-top: 210px;
+  }
+  p,
+  .about-me-text,
+  .contact-text,
+  .port-name-footer {
+    font-size: 1.57rem;
+  }
+  .hire {
+    border-radius: 1.6rem;
+    font-size: 1.3rem;
+  }
+  .projects {
+    height: 640px;
+  }
+  .each {
+    width: 22%;
+    height: 440px;
+  }
+}
+
+@media (min-width: 2800px) {
+  .highlighting-welcoming {
+    font-size: 4rem;
+    margin-bottom: 55px;
+  }
+  .welcoming-text {
+    font-size: 3.2rem;
+  }
+  p,
+  .about-me-text,
+  .contact-text,
+  .port-name-footer {
+    font-size: 1.87rem;
+  }
+  .hire {
+    border-radius: 1.8rem;
+    font-size: 1.5rem;
+  }
+  .projects {
+    height: 670px;
+  }
+  .each {
+    width: 23%;
+    height: 480px;
+  }
+  .see-more{
+    /* margin-top: 100px; */
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 3000px) {
+  .projects {
+    height: 750px;
+  }
+  .each {
+    width: 26%;
+    height: 570px;
+  }
+}
+
+@media (min-width: 3240px) {
+  .projects {
+    height: 790px;
+  }
+  .each {
+    width: 26%;
+    height: 600px;
+  }
+}
+
+@media (min-width: 3500px) {
+  .projects {
+    height: 830px;
+  }
+  .each {
+    height: 630px;
+  }
+}
+
+@media screen and (min-height: 900px) {
+  .welcoming-text{
+    margin-top: 180px;
+  }
+}
