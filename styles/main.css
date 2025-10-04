@@ -263,9 +263,9 @@ hr {
 }
 
 .project-texts {
-  font-size: 10px;
+  font-size: 0.5rem;
   text-align: justify;
-  color: balck;
+  color: black;
 }
 
 .see-more {
@@ -537,8 +537,9 @@ hr {
     font-size: 1rem;
   }
   .project-texts {
-    font-size: 20px;
+    font-size: 0.8rem;
   }
+  
   .one {
     left: 25%;
   }
@@ -611,6 +612,9 @@ hr {
     font-size: 1.5rem;
     line-height: 30px;
   }
+  .project-texts {
+    font-size: 1.1rem;
+  }
   .nav-list-larger a{
     font-size: 1.2rem;
   }
@@ -642,11 +646,11 @@ hr {
     padding: 0.8% 1.5%;
   }
   .projects {
-    height: 560px;
+    height: 590px;
   }
   .each {
     width: 20%;
-    height: 350px;
+    height: 380px;
   }
   .footer-nav {
     font-size: 2rem;
@@ -748,5 +752,4 @@ hr {
   .welcoming-text{
     margin-top: 180px;
   }
-
 }
