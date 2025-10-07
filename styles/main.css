@@ -299,6 +299,8 @@ hr {
   font-size: 0.6rem;
   padding-bottom: 15px;
 }
+.contacts{
+  color: wheat;
 
 .footer-lower {
   text-align: center;
@@ -753,3 +755,4 @@ hr {
     margin-top: 180px;
   }
 }
+
