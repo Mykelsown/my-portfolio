@@ -299,7 +299,7 @@ hr {
   font-size: 0.6rem;
   padding-bottom: 15px;
 }
-.contacts{
+.contacts a{
   color: wheat;
 
 .footer-lower {
@@ -755,4 +755,5 @@ hr {
     margin-top: 180px;
   }
 }
+
 
