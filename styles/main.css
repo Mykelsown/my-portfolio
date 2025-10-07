@@ -302,9 +302,7 @@ hr {
 .contacts>a{
   color: wheat;
   text-decoration: none;
-}
-.contacts>a:hover{
-  color: gray;
+  cursor: pointer;
 }
 
 .footer-lower {
@@ -760,6 +758,7 @@ hr {
     margin-top: 180px;
   }
 }
+
 
 
 
