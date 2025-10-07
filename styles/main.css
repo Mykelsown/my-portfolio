@@ -303,6 +303,9 @@ hr {
   color: wheat;
   text-decoration: none;
 }
+.contacts>a:hover{
+  color: gray;
+}
 
 .footer-lower {
   text-align: center;
@@ -757,6 +760,7 @@ hr {
     margin-top: 180px;
   }
 }
+
 
 
 
