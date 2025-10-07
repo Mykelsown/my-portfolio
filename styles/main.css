@@ -301,6 +301,7 @@ hr {
 }
 .contacts>a{
   color: wheat;
+  text-decoration: none;
 }
 
 .footer-lower {
@@ -756,6 +757,7 @@ hr {
     margin-top: 180px;
   }
 }
+
 
 
 
