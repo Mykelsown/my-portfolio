@@ -1,107 +1,195 @@
+
+
 /* first section of the website */
 .onboarding-page {
-  background: linear-gradient(
-    to top,
-    #046a90 0%,
-    1.8707482144236565%,
-    #0063a1 3.741496428847313%,
-    5.733409158629666%,
-    #057cd6 7.725321888412018%,
-    14.406878322107087%,
-    #0e70c6 21.088434755802155%,
-    26.70068070292473%,
-    #0049b8 32.3129266500473%,
-    36.564627289772034%,
-    #1e4af5 40.816327929496765%,
-    46.768708527088165%,
-    #003ae4 52.721089124679565%,
-    57.482993602752686%,
-    #1121d8 62.244898080825806%,
-    66.15646183490753%,
-    #04149f 70.06802558898926%,
-    76.36054456233978%,
-    #010475 82.65306353569031%,
-    91.32653176784515%,
-    #13131f 100%
-  );
-  height: 97vh;
+  /* keep the original rich blue feel but soften for readable text */
+  background: linear-gradient(135deg, #046a90 0%, #057cd6 45%, #0e70c6 100%);
+  min-height: 85vh; /* let header sit above content */
+  padding: 90px 1.25rem 4rem; /* leave space for fixed header */
+  display: flex;
+  align-items: center;
+  color: #fff;
   position: relative;
-  /* padding:0px; */
-  /* margin-top: -150px; */
+  overflow: hidden;
 }
 
+.onboarding-contents-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: stretch;
+  height: auto;
+}
+
+/* layout: image + text stack on small, side-by-side on larger */
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  width: 100%;
+}
+
+/* image column */
+.section-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.onboarding-pic {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 18px 48px rgba(1, 30, 45, 0.18);
+  border: 6px solid rgba(248, 233, 161, 0.08);
+}
+
+/* text column */
 .about-me-content {
-  position: absolute;
-  bottom: 40px;
-  right: 10px;
-}
-
-.highlighting-welcoming {
-  display: block;
-  font-size: 1.2rem;
-  text-align: left;
-  word-spacing: 5px;
-}
-
-.welcoming-text {
-  color: wheat;
-  margin: 10px;
-  font-size: 1rem;
-  margin-bottom: 55px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: center;
+  padding: 0.5rem 0.75rem;
   text-align: center;
-  line-height: 30px;
-  margin-top: 100px;
 }
 
+/* small label above heading */
+.highlighting-welcoming {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: rgba(248, 233, 161, 0.95); /* warm accent */
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* main hero heading */
+.welcoming-text {
+  color: #fff;
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.12;
+  font-weight: 700;
+  /* text-align: center; */
+}
+
+/* paragraph / intro */
 .about-me-text {
-  font-size: 0.67rem;
-  line-height: 155%;
-  text-align: left;
-  margin-left: 30%;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  padding-right: 10px;
-  text-indent: 7%;
-  text-align: justify;
-  position: relative;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
+/* subtle name badge */
 .name {
-  color: #f8e9a1;
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 2%;
-  font-weight: 400;
-  margin-left: 30%;
+  color: #01384f;
+  background: rgba(248, 233, 161, 0.95);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  display: inline-block;
 }
 
+/* primary CTA */
 .hire {
+  display: inline-block;
   background-color: #03d3b7;
+  color: #0257a6;
   border: none;
   border-radius: 1.1rem;
-  color: rgba(2, 87, 166, 0.993);
-  /* margin-left: 76%; */
-  /* margin-bottom: 10px; */
-  transition: 0.1s;
-  position: absolute;
-  right: 11px;
-  bottom: 0px;
-  padding: 1% 1.7%;
+  padding: 0.7rem 2rem;
+  font-weight: 700;
   cursor: pointer;
+  transition: transform 0.12s ease, background-color 0.12s;
+  margin-top: 0.6rem;
+  align-self: center;
 }
-
-.hire:hover,
-.hire-extend:hover {
+.hire:hover {
+  transform: translateY(-3px);
   background-color: #01a892;
-  color: wheat;
-  box-shadow: 0.5px 1px 8px rgba(2, 87, 166, 0.993);
-  transform: translateY(1px);
+  color: #fff;
 }
 
-.hire:active,
-.hire-extend:active {
-  transform: scale(1.03);
+/* small devices: keep things stacked and readable */
+@media (max-width: 599px) {
+  .onboarding-page {
+    padding-top: 100px;
+    min-height: 80vh;
+  }
+  .welcoming-text {
+    font-size: 1.25rem;
+  }
+  .about-me-text {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+  .onboarding-pic {
+    max-width: 320px;
+  }
+  .name {
+    font-size: 0.85rem;
+  }
 }
+
+/* medium and up: side-by-side layout */
+@media (min-width: 750px) {
+  .onboarding-contents-container {
+    gap: 2rem;
+  }
+  .about-me-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .section-img-container {
+    width: 48%;
+  }
+  .about-me-content {
+    width: 50%;
+    text-align: left;
+    padding-left: 2rem;
+  }
+  .welcoming-text {
+    font-size: 2rem;
+  }
+  .about-me-text {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .hire {
+    align-self: flex-start;
+  }
+}
+
+/* larger screens: increase scale & spacing */
+@media (min-width: 1000px) {
+  .onboarding-page {
+    padding-top: 110px;
+    min-height: 92vh;
+  }
+  .onboarding-pic {
+    max-width: 520px;
+  }
+  .welcoming-text {
+    font-size: 2.4rem;
+    line-height: 1.05;
+  }
+  .about-me-text {
+    font-size: 1.05rem;
+  }
+}
+
 
 /* start of the second section of the website */
 .structure {
@@ -172,7 +260,7 @@ hr {
   transition: 0.3s;
 }
 
-.why-content:hover{
+.why-content:hover {
   background-color: rgba(145, 145, 145, 0.829);
 }
 
@@ -274,7 +362,7 @@ hr {
   text-decoration: none;
 }
 
-.see-more{
+.see-more {
   color: rgb(63, 63, 63);
 }
 
@@ -299,7 +387,7 @@ hr {
   font-size: 0.6rem;
   padding-bottom: 15px;
 }
-.contacts>a{
+.contacts > a {
   color: wheat;
   text-decoration: none;
   cursor: pointer;
@@ -345,6 +433,7 @@ hr {
   }
   .welcoming-text {
     font-size: 1.3rem;
+    margin-left: 100px;
   }
   .name {
     font-size: 1.1rem;
@@ -398,11 +487,13 @@ hr {
   }
   .nav-list-larger {
     display: flex;
-    
   }
   .onboarding-page {
     height: 100vh;
-  }  
+  }
+  .name{
+    width: fit-content;
+  }
 }
 
 @media (min-width: 830px) {
@@ -438,7 +529,6 @@ hr {
   }
 }
 @media (min-width: 1000px) {
-  
   header {
     padding: 1.4rem;
   }
@@ -448,22 +538,22 @@ hr {
     margin-left: 5%;
   }
 
-  .nav-list-larger{
+  .nav-list-larger {
     display: flex;
     gap: 20px;
   }
   .nav-list-larger a {
-  font-size: 1rem;    
-  padding: 8px 16px;    
-  text-decoration: none;
-  color: inherit;        
-  transition: color 0.2s;
-  font-weight: 500;
-}
+    font-size: 1rem;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+    font-weight: 500;
+  }
 
-.nav-list-larger a:hover {
-  color: #046a90;   
-}
+  .nav-list-larger a:hover {
+    color: #046a90;
+  }
   .highlighting-welcoming {
     font-size: 2rem;
   }
@@ -544,7 +634,7 @@ hr {
   .project-texts {
     font-size: 0.8rem;
   }
-  
+
   .one {
     left: 25%;
   }
@@ -560,7 +650,7 @@ hr {
     width: 18%;
     height: 280px;
   }
-  .welcoming-text{
+  .welcoming-text {
     margin-top: 140px;
   }
 }
@@ -620,7 +710,7 @@ hr {
   .project-texts {
     font-size: 1.1rem;
   }
-  .nav-list-larger a{
+  .nav-list-larger a {
     font-size: 1.2rem;
   }
 }
@@ -660,7 +750,7 @@ hr {
   .footer-nav {
     font-size: 2rem;
   }
-  .see-more{
+  .see-more {
     font-size: 1.3rem;
   }
 }
@@ -718,7 +808,7 @@ hr {
     width: 23%;
     height: 480px;
   }
-  .see-more{
+  .see-more {
     /* margin-top: 100px; */
     font-size: 1.5rem;
   }
@@ -753,15 +843,78 @@ hr {
   }
 }
 
-@media screen and (min-height: 900px) {
-  .welcoming-text{
-    margin-top: 180px;
+/* small devices: keep things stacked and readable */
+@media (max-width: 599px) {
+  .onboarding-page {
+    padding-top: 100px;
+    min-height: 80vh;
+  }
+  .welcoming-text {
+    font-size: 1.25rem;
+  }
+  .about-me-text {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+  .onboarding-pic {
+    max-width: 320px;
+  }
+  .name {
+    font-size: 0.85rem;
   }
 }
 
+/* medium and up: side-by-side layout */
+@media (min-width: 750px) {
+  .onboarding-contents-container {
+    gap: 2rem;
+  }
+  .about-me-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .section-img-container {
+    width: 48%;
+  }
+  .about-me-content {
+    width: 50%;
+    text-align: left;
+    padding-left: 2rem;
+  }
+  .welcoming-text {
+    font-size: 2rem;
+  }
+  .about-me-text {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .hire {
+    align-self: flex-start;
+  }
+}
 
+/* larger screens: increase scale & spacing */
+@media (min-width: 1000px) {
+  .onboarding-page {
+    padding-top: 110px;
+    min-height: 92vh;
+  }
+  .onboarding-pic {
+    max-width: 520px;
+  }
+  .welcoming-text {
+    font-size: 2.4rem;
+    line-height: 1.05;
+  }
+  .about-me-text {
+    font-size: 1.05rem;
+  }
+}
 
-
-
-
-
+/* very tall screens */
+@media screen and (min-height: 900px) {
+  .welcoming-text {
+    margin-top: 0px;
+  }
+}

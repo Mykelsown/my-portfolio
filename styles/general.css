@@ -17,13 +17,70 @@ p{
 }
 
 section{
-  padding: 20px;
+  padding: 10px;
 }
 
 a{
   text-decoration: none;
 }
 
-hr{
-  background-color: gray;
+:root {
+  --bg-top: #046a90;
+  --bg-mid: #057cd6;
+  --bg-accent: #0e70c6;
+  --warm-accent: rgba(248, 233, 161, 0.06);
+  --text-on-dark: #ffffff;
+}
+
+/* page-wide background that complements onboarding */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+      135deg,
+      var(--bg-top) 0%,
+      var(--bg-mid) 45%,
+      var(--bg-accent) 100%
+    ),
+    radial-gradient(circle at 10% 10%, var(--warm-accent), transparent 12%),
+    radial-gradient(circle at 90% 90%, rgba(1, 186, 178, 0.03), transparent 14%);
+  background-color: var(--bg-mid);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--text-on-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* keep section backgrounds transparent so the site background shows through */
+main,
+section {
+  background: transparent;
+}
+
+/* let the fixed header gently show the background underneath */
+header {
+  background-color: rgba(
+    239,
+    214,
+    143,
+    0.92
+  ); /* original header hue, slightly translucent */
+  backdrop-filter: blur(4px);
+}
+
+/* ensure light UI cards and containers keep good contrast */
+.each,
+.button-relate,
+.why-content,
+.contact-container,
+footer .footer-container {
+  background-clip: padding-box;
+}
+
+/* small helper for explicitly transparent wrappers */
+.page-wrapper {
+  background: transparent;
 }
